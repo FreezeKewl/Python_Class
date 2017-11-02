@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+</head>
+<body style="background-color:powderblue;">
+<link rel="stylesheet" type="img" href="{{ url_for('static', filename='IMG_1956.JPG')}}">
+  <div id="header-inner">
+			<a href="logo.html" id="lo" ><img src=static/img/IMG_0594.JPG style="width:1000px;height:100px;"></a>
+			<!-- <img id="logo" src="img/IMG_6999.png"> -->
+			<nav>
+				<!-- <a href="#" id="menu-icon"></a> -->
+				<ul>
+					<li><a href="templates/index.html"><h2 style="font-family:courier;">Home</h2></a></li>
+					<li><a href="templates/about.html"><h2>About</h2></a></li>
+        </ul>
+			</nav>
+ </div>
+
+<h1>This is {{user}}'s Webpage</h1>
+
+<p>A result-oriented professional, with training in requirements
+  gathering and documentation, test planning, bug and defect tracking,
+  and knowledge of MySQL, GitHub. I am open to new and unique challenges,
+  personable, work well independently and as a team to achieve
+  the most efficient results.</p>
+
+<img src= static/img/IMG_0676.JPG style="width:400px;height:300px">
+<img src= static/img/IMG_0594.JPG style="width:400px;height:300px>
+ <img src="{{url_for('static',filename=img)}}">
+ <br><br>
+ <h3>Click here to visit my GitHub account.</h3>
+<a href="https://github.com/FreezeKewl/Python_Class">Github</a>
+
+<form id = "web-form" action="{{url_for('about')}}" method= "POST" enctype="multipart/form-data">
+  <br>
+
+  Name:  <input type text="text" name="" placeholder="Name">
+  <button>Submit</button>
+
+</form>
+
+</body>
+</html>
